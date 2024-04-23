@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --boldfont: #172339;
+    --normalfont: #49566D;
+    --footerbg: #F3EDE7;
+    --mainbg: #FAF8F6;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Epilogue', sans-serif;
+    background-color: var(--mainbg);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.logo {
+    margin-block: 2rem;
+}
+
+.btn {
+    text-decoration:none;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+}
+
+.white {
+    color: var(--boldfont);
+    font-weight: 800;
+    font-size: 0.8rem;
+    border: 1px solid #49566D;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 400;
+    color: #172339;
+    margin-bottom: 1em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.target {
+    position: relative;
+}
+
+.target::before {
+    content: url(img/pattern-curved-line-1.svg);
+    position: absolute;
+    transform: scale(50%);
+    top: -40px;
+    left: -70px;
+}
+
+.hero p {
+    color: #49566D;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.blue {
+    display: inline-block;
+    margin-bottom: 4em;
+    background-color: #172339;
+    color: #FAF8F6;
+    font-weight: 600;
+    padding: 1em 2em;
+}
+
+.img-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.hero img {
+    margin-bottom: 4rem;
+    margin-inline: auto;
+    display: block;
+}
+
+.stats {
+    text-align: center;
+}
+
+.stats span {
+    display: inline-block;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--boldfont);
+    letter-spacing: 0px;
+
+}
+
+.stats p {
+    color: var(--normalfont);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-block-start: 1em;
+}
+
+.details {
+    text-align: center;
+    padding:  1rem 3rem 2rem;
+    margin-block: 17rem 3rem; 
+    background-color: #172339;
+    position: relative;
+    border-radius: 15px;
+}
+
+.details img{
+    width: 70%;
+    position: relative;
+    bottom: 190px;
+}
+
+h2 {
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #F3EDE7;
+}
+
+h2::before {
+    content: url(img/pattern-curved-line-2.svg);
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-70%) scale(1.2);
+}
+
+.details p {
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin: 0 auto 2em;
+    line-height: 1.7em;
+    color: #F3EDE7;
+}
+
+.upper {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: var(--boldfont);
+    margin-bottom: 3rem;
+}
+
+
+.upper span {
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+footer {
+    text-align: center;
+
+}
+
+.logo-footer {
+    margin-bottom: 3rem;
+}
+
+footer p {
+    color: var(--normalfont);
+    margin-bottom: 3rem;
+}
+
+.socials {
+    margin-bottom: 2rem;
+    
+}
+
+.socials img:not(:first-child) {
+    margin-left: 2rem;
+
+}
+
+.socials:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+.white:hover {
+    color: #F3EDE7;
+    background-color: #172339;
+}
+
+.blue:hover {
+    color: #F3EDE7;
+    background-image: linear-gradient(100deg, #CB30E3, #FFA84E);
+}
+
+@media screen and (min-width:768px){
+
+    :root {
+        font-size: 20px;
+    }
+    
+    
+   .hero img {
+    content: url(img/image-hero-portrait.webp);
+   }
+
+   .flex-wrap {
+    position: relative;
+   }
+
+   .img-wrapper {
+    position: absolute;
+    top: 0;
+    right: 70px;
+    width: 40%;
+    z-index: -10;
+   }
+
+   .hero-txt {
+    padding-block: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+
+    h1 {
+        font-size: 2.5rem;
+        z-index: 10;
+        max-width: 70%;
+    }
+
+    .target::before {
+        transform: scale(75%);
+        top: -70px;
+        left: -40px;
+    }
+  
+    .hero-txt p {
+        max-width: 50%;
+    }
+
+    .hero a {
+        margin-top: 2rem;
+        width: 300px;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 4rem;
+    }
+
+    .details img {
+        content: url(img/image-jeremy-large.webp);
+        bottom: 400px;
+
+    }
+
+    .details {
+        padding:  .1rem 3rem 2rem;
+        margin-block: 25rem 3rem;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .socials {
+        transform: translateY(-25%);
+    }
+
+    footer {
+        margin-block: 7rem 3rem;
+        
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+   
+
+
+    .container {
+        width: 75%;
+    }
+    h1 {
+        
+        max-width: 65%;
+    }
+
+    .hero {
+        width: calc(80%);
+        display: inline-block;
+    }
+    main {
+        position: relative;
+    }
+
+    .stats {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 15%;
+        margin-top: 5rem;
+        padding: 0;
+    }
+
+    .hero-txt a {
+        font-size: .8em;
+        width: max-content;
+    }
+
+    .img-jeremy {
+        width: 70%;
+    }
+
+    .details {
+        display: flex;
+        justify-content: space-around;
+        padding-block: 4rem;
+        text-align: left;
+        width: 75%;
+        margin: 9rem auto 10rem;
+        z-index: 100;
+    }
+
+    .details-txt {
+        width: 50%;
+    }
+
+    .details-txt p {
+        margin-inline: 0;
+        max-width: 70%;
+    }
+    .details img {
+        position: absolute;
+        bottom: 0;
+        width: 40%;
+        height: 700px;
+        width: auto;
+    }
+
+    h2::before {
+        left: -60px;
+        bottom: -150px;
+        top: auto;
+    }
+
+    footer {
+        z-index: -10;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 70%;
+        
+        background-color: var(--footerbg);
+        transform: translateY(-60%);
+    }   
+
+    .flex {
+        margin-top: 300px;
+    }
+    
+   
+}
