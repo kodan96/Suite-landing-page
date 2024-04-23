@@ -372,7 +372,6 @@ footer p {
         width: 100%;
         margin: 0 auto;
         text-align: center;
-        height: 70%;
         
         background-color: var(--footerbg);
         transform: translateY(-60%);
